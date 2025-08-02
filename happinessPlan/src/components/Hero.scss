@@ -1,0 +1,202 @@
+.hero {
+  width: 100%;
+  background-image: url("../assets/hero.jpg"); // use your background image
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 0 0px 50px 50px;
+
+  .hero-content {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 13rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      position: relative;
+      
+      &::after{
+        content: "plan";
+        position: absolute;
+        font-size: 2rem;
+      }
+    }
+
+
+
+    p {
+      width: 500px;
+      font-size: 1rem;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .hero-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .travel-card {
+      width: 40%;
+      display: flex;
+
+      .travel-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.07);
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        align-items: start;
+        max-width: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin: 0;
+          color: #d1d1d1;
+        }
+      }
+
+      .travel-images {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.07);
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+        align-items: start;
+        max-width: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: calc(1rem + 10px);
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid #fff;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .travel-card-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+
+      .down-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: transparent;
+        border: 1px solid #fff;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #ffffff10;
+        }
+
+        &.active {
+          background-color: white;
+          color: black;
+        }
+      }
+
+      .explore-btn {
+        padding: 0.8rem 1.6rem;
+        border: 2px solid #fff;
+        border-radius: 999px;
+        background-color: white;
+        color: #000;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero{
+    .hero-content{
+      height: 50vh;
+      padding-top: 4rem;
+      gap: 2rem;
+      h1{
+        font-size: 4rem;
+        &::after{
+          font-size: 0.8rem;
+        }
+      }
+      p{
+        width: 90%;
+        padding-top: 1.2rem;
+      }
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+
+    .travel-card {
+      width: 100%;
+      align-items: center;
+
+      .travel-info, .travel-images {
+        margin-bottom: 1rem;
+      }
+
+      .travel-info{
+        h3{
+          font-size: 1.8rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .travel-card-btn {
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      margin: 2rem 0 1rem 0;
+    }
+  }
+  }
+}
