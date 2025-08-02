@@ -73,7 +73,8 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone 
+To https://github.com/MercySpectures/happinessplan.git
 cd happinessPlan
 ```
 
@@ -154,7 +155,7 @@ All styles are written in SCSS and can be found in the corresponding `.scss` fil
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+All rights reserved.
 
 ## 🤝 Contributing
 
@@ -164,12 +165,13 @@ This project is licensed under the MIT License.
 4. Test thoroughly
 5. Submit a pull request
 
-## 📞 Support
+## Crafted by
 
-For support or questions, please contact:
-- Email: hello@happinessplan.com
-- Phone: +1 234 567 8901
+###Aman Shrivas
+- Email: huntethan144@gmail.com
+- Phone: +91 7693949108
 
 ---
 
 **HappinessPlan** - Making every journey unforgettable! ✈️🌍
+
